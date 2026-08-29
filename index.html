@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071f33">
+  <meta name="description" content="국토안전관리원 생성형 AI 활용 교육을 위한 모바일 프롬프트 실습 페이지">
+  <title>국토안전 AI 실습실</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-mark">K</span><span>국토안전 <b>AI 실습실</b></span></a>
+    <span class="date">2026. 08. 31.</span>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="eyebrow">✦ 생성형 AI 활용 업무 효율화 교육</div>
+      <h1>프롬프트는 복사하고,<br><em>판단은 사람이.</em></h1>
+      <p>국토안전 업무에 맞춘 실습 프롬프트를 골라<br>스마트폰에서 바로 붙여넣어 보세요.</p>
+      <a class="primary" href="#practice">실습 시작하기 <span>↓</span></a>
+      <div class="rings" aria-hidden="true"></div>
+    </section>
+
+    <aside class="notice" aria-label="실습 전 보안 안내">
+      <span class="notice-icon">✓</span>
+      <p><b>실습 전 확인</b> 개인정보, 비공개 점검자료, 보안정보는 입력하지 마세요. AI 결과는 초안이며 안전·법률 판단은 반드시 담당자가 검토합니다.</p>
+    </aside>
+
+    <section class="practice" id="practice">
+      <div class="section-head">
+        <div><span class="number">01</span><h2>오늘의 실습</h2></div>
+        <p>도구를 고르고, 업무에 맞는 프롬프트를 복사하세요.</p>
+      </div>
+
+      <label class="search"><span>⌕</span><input id="search" type="search" placeholder="예: 점검, 회의, 안내문" autocomplete="off"><span class="sr-only">프롬프트 검색</span></label>
+      <div class="tabs" role="group" aria-label="도구별 필터">
+        <button class="active" data-tool="전체">전체</button><button data-tool="Gemini">Gemini</button><button data-tool="Flow">Flow</button><button data-tool="Opal">Opal</button>
+      </div>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <section class="formula">
+      <div class="section-head inverse"><div><span class="number">02</span><h2>좋은 지시의 공식</h2></div><p>결과가 아쉬우면 이 다섯 가지를 한 줄씩 더해보세요.</p></div>
+      <div class="formula-grid">
+        <div><span>1</span><b>역할</b><small>누구로서</small></div><div><span>2</span><b>상황</b><small>어떤 맥락에서</small></div><div><span>3</span><b>할 일</b><small>무엇을</small></div><div><span>4</span><b>조건</b><small>무엇을 지켜</small></div><div><span>5</span><b>결과물</b><small>어떤 형태로</small></div>
+      </div>
+      <blockquote>“결과물 형태를 구체적으로 쓰면<br>재작업이 줄어듭니다.”</blockquote>
+    </section>
+
+    <section class="launch">
+      <h2>복사했다면, 이제 실행할 차례</h2><p>사용할 도구를 열고 프롬프트를 붙여넣으세요.</p>
+      <div><a href="https://gemini.google.com/" target="_blank" rel="noreferrer">Gemini 열기 ↗</a><a href="https://labs.google/fx/tools/flow" target="_blank" rel="noreferrer">Flow 열기 ↗</a><a href="https://opal.google/" target="_blank" rel="noreferrer">Opal 열기 ↗</a></div>
+    </section>
+  </main>
+
+  <footer><span>AI는 ‘답’이 아니라 <b>초안</b>입니다.</span><small>국토안전관리원 생성형 AI 활용 교육 · 2026</small></footer>
+  <div class="toast" id="toast" role="status">✓ 프롬프트를 복사했어요</div>
+  <script src="script.js"></script>
+</body>
+</html>
